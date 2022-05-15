@@ -4,12 +4,7 @@ import App from './App';
 
 export const mount = (element) => {
   const root = ReactDOM.createRoot(element);
-  root.render(
-    <div>
-      <h1>React app</h1>
-      <App />
-    </div>
-  );
+  root.render(<App />);
 };
 
 if (process.env.NODE_ENV === 'development') {
